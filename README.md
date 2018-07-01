@@ -6,6 +6,18 @@ Create image:
 sudo docker build --no-cache  -t="curl-with-tls13" .
 ```
 
+Test which TLS is spoken by a site:
+```
+sudo docker run curl-with-tls13  bash -c "/test_TLS.sh tls13.crypto.mozilla.org"
+```
+with result:
+```
+tls13.crypto.mozilla.org* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256
+```
+
+
+Longer stuff
+
 Run
 
 Test which TLS is spoken by www.google.com:

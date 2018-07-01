@@ -1,10 +1,12 @@
 # Docker-image-curl-with-TLS1.3
-Docker image with curl with TLS1.3
+Docker image with curl with TLS1.3, based on Debian Experimental with OpenSSL 1.1.1
 
-Create image:
+# Create image:
 ```
 sudo docker build --no-cache  -t="curl-with-tls13" .
 ```
+
+# Usages
 
 Test which TLS is spoken by a site:
 ```
@@ -16,7 +18,7 @@ tls13.crypto.mozilla.org* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256
 ```
 
 
-Longer stuff
+## Longer stuff
 
 Run
 
